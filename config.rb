@@ -32,6 +32,14 @@ end
 page "/feed.xml", layout: false
 
 ###
+# Deploy settings
+###
+
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
+###
 # Compass
 ###
 
